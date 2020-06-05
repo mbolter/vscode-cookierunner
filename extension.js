@@ -45,7 +45,7 @@ function getConfig() {
 function getLocalTemplateFolders(configuration) {
 	var configuredFolders = configuration.get('basic.localDiskTemplates');
 	var projectFolders = [].concat.apply([], configuredFolders.map(f => getSubFolders(f)));
-	return projectFolders.map(i => i.replace("mats", "testuser"))
+	return projectFolders
 }
 
 function getGitTemplateFolders(configuration) {
