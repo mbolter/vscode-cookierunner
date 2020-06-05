@@ -2,6 +2,8 @@
 	"name": "vscode-cookierunner",
 	"displayName": "vscode-cookierunner",
 	"description": "Extension for executing cookiecutter with user selected template",
+	"publisher": "MatsBolter",
+	"icon": "icon.png",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.45.0"
