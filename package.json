@@ -29,7 +29,6 @@
 					  "type": "string"
 				  },
 				  "default": [
-					  "/Users/mats/Documents/my-cookiecutter-templates/"
 					],
 				  "description": "Paths to local folder with cookierunner templates."
 				},
