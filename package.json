@@ -1,0 +1,66 @@
+{
+	"name": "vscode-cookierunner",
+	"displayName": "vscode-cookierunner",
+	"description": "Extension for executing cookiecutter with user selected template",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.45.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:vscode-cookierunner.cookierunner"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "vscode-cookierunner.cookierunner",
+				"title": "CookieRunner: Create new project"
+			}
+		],
+		"configuration": {
+			"title": "Cookierunner",
+			"properties": {
+				"vscode-cookierunner.basic.localDiskTemplates": {
+				  "type": "array",
+				  "items": {
+					  "type": "string"
+				  },
+				  "default": [
+					  "/Users/mats/Documents/my-cookiecutter-templates/"
+					],
+				  "description": "Paths to local folder with cookierunner templates."
+				},
+				"vscode-cookierunner.basic.gitTemplates": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						"https://github.com/docker-science/cookiecutter-docker-science",
+						"https://github.com/cookiecutter-flask/cookiecutter-flask"
+					  ],
+					"description": "Paths to git with cookierunner templates."
+				  }
+			}
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.45.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	}
+}
