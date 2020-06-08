@@ -4,7 +4,7 @@ Extension for running Cookiecutter inside Visual Studio Code.
 
 Activated through Command palette (Ctrl+Shift+P / Command+Shift+P), command "CookieRunner: Create new project" displays templates from predefined local folders and git-repos. Once selected cookiecutter executes with selected user input. Project will be created in currently open VS Code folder.
 
-![Running command](images/cmd_ext.gif, "Running the Cookierunner command")
+<img src="https://raw.githubusercontent.com/mbolter/vscode-cookierunner/master/images/cmd_run.gif">
 
 ## Features
 
